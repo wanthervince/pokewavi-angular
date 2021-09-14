@@ -1,0 +1,14 @@
+<div class="card hover-{{typeColor}}" (click)='pokemonDetiel()'>
+ <h2>{{name.toUpperCase()}}</h2>
+ <div class="imgPoke">
+  <img  src="{{img}}" alt="img pokemon">
+ </div>
+ <p>Nrº: {{ nro }}</p>
+ <div class="typePoke ">
+  <div class="typePoke_item {{type.type.name}} " *ngFor="let type of typess">
+    <p>
+     {{type.type.name.toUpperCase()}}
+    </p>
+ </div>
+ </div>
+</div>

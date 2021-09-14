@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PokedexComponent } from './page/pokedex/pokedex.component';
+import { PokemonComponent } from './page/pokemon/pokemon.component';
+import { CardComponent } from './page/pokedex/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    PokedexComponent,
+    PokemonComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,HttpClientModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

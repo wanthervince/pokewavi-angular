@@ -1,0 +1,17 @@
+<div class="pokemon {{typeColor}}">
+ <h1 class="title">{{ name.toUpperCase() }}</h1>
+ <div class="conten_img">
+  <img src="{{img}}" alt="img">
+ </div>
+ <p class="pokeId">Nrº {{nro}}</p>
+ <div class="type" >
+  <p *ngFor="let type of types" class="{{ type.type.name}}">{{ type.type.name.toUpperCase() }}</p>
+ </div>
+ <div class="ability">
+  <h2>Ability</h2>
+  <div>
+   <h3>abilidad 1</h3>
+   <p>descripcion</p>
+  </div>
+ </div>
+</div>

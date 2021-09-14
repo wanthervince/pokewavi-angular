@@ -1,0 +1,32 @@
+
+.pokedex{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+}
+.pagination{
+  width: 100%;
+  height: 3rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination > button{
+ width: 6rem;
+ outline: none;
+ border:none;
+ height: 2.05rem;
+ border-radius: 5px;
+ font-family: 'Alumni Sans', sans-serif;
+ font-size: x-large;
+ font-weight: 700;
+ box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.377);
+ cursor: pointer;
+ margin: 0 2rem;
+ transition: .5s;
+}.pagination> button:hover{
+  background-color: #8c00ff8f;
+}

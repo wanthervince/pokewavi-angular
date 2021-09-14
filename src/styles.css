@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
+
+body{
+ font-family: 'Alumni Sans', sans-serif;
+}
+*{margin: 0;
+padding: 0;}
+.grass{background-color: #7BCE52;}
+.fire{background-color: #e95252;}
+.water{background-color: #399CFF;}
+.normal{background-color: #c7c7c7;}
+.electric{background-color: #FFE476;}
+.psychic{background-color: #ff00b3;}
+.fighting{background-color: #f38508;}
+.rock{background-color: #695f51;}
+.ground{background-color: #8B6C47;}
+.flying{background-color: #9CADF7;}
+.bug{background-color: #4fda72;}
+.poison{background-color: #b40bd6;}
+.dark{background-color: #353535;}
+.ghost{background-color: #65349c;}
+.ice{background-color: #00eeff;}
+.steel{background-color: #708090;}
+.dragon{background-color: #7B63E7;}
+.fairy{background-color: #C54A8A;}
+
+
+
+.hover-grass:hover{background-color: #7BCE52;color: whitesmoke;}
+.hover-fire:hover{background-color: #e95252;color: whitesmoke;}
+.hover-water:hover{background-color: #399CFF;color: whitesmoke;}
+.hover-normal:hover{background-color: #c7c7c7;color: whitesmoke;}
+.hover-electric:hover{background-color: #FFE476;color: whitesmoke;}
+.hover-psychic:hover{background-color: #ff00b3;color: whitesmoke;}
+.hover-fighting:hover{background-color: #f38508;color: whitesmoke;}
+.hover-rock:hover{background-color: #695f51;color: whitesmoke;}
+.hover-ground:hover{background-color: #8B6C47;color: whitesmoke;}
+.hover-flying:hover{background-color: #9CADF7;color: whitesmoke;}
+.hover-bug:hover{background-color: #4fda72;color: whitesmoke;}
+.hover-poison:hover{background-color: #b40bd6;color: whitesmoke;}
+.hover-dark:hover{background-color: #353535;color: whitesmoke;}
+.hover-ghost:hover{background-color: #65349c;color: whitesmoke;}
+.hover-ice:hover{background-color: #00eeff;color: whitesmoke;}
+.hover-steel:hover{background-color: #708090;color: whitesmoke;}
+.hover-dragon:hover{background-color: #7B63E7;color: whitesmoke;}
+.hover-fairy:hover{background-color: #C54A8A;color: whitesmoke;}
