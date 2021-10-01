@@ -9,6 +9,7 @@ import { PokemonComponent } from './page/pokemon/pokemon.component';
 import { CardComponent } from './page/pokedex/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { RegionesComponent } from './page/regiones/regiones.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,11 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     PokedexComponent,
     PokemonComponent,
-    CardComponent
+    CardComponent,
+    RegionesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,HttpClientModule,FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

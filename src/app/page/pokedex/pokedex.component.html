@@ -1,8 +1,15 @@
-
-
- <div class="pokedex">
-  <app-card *ngFor="let pokemon of results" [name]="pokemon.name" ></app-card>
- </div>
- <div class="pagination">
-  <button  (click)="nextAndPreviu(listPokemon.previous)"> < </button> <button (click)="nextAndPreviu(listPokemon.next)">  > </button>
- </div>
+<div class="conten_search">
+  <input
+    type="text"
+    [(ngModel)]="name"
+    placeholder="INGRESE EL NOMBRE/ID DEL POKEMON"
+  />
+  <button (click)="pokemonDetiel()">BUSCAR</button>
+</div>
+<div class="pokedex">
+  <app-card *ngFor="let pokemon of results" [name]="pokemon.name"></app-card>
+</div>
+<div class="pagination">
+  <button (click)="nextAndPreviu(listPokemon.previous)"><</button>
+  <button (click)="nextAndPreviu(listPokemon.next)">></button>
+</div>

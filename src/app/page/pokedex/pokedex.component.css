@@ -1,12 +1,50 @@
-
-.pokedex{
- width: 100%;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- gap: 1rem;
+.conten_search {
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #8c00ff8f;
+  border-bottom: 2px solid #8c00ff8f;
+  justify-content: center;
 }
-.pagination{
+.conten_search > input {
+  outline: none;
+  border: none;
+  height: 2rem;
+  width: 17.3rem;
+  margin: 0 1rem;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: x-large;
+  padding: 0 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.377);
+}
+.conten_search > input::placeholder {
+  color: #2525255d;
+}
+.conten_search > button {
+  width: 6rem;
+  outline: none;
+  border: none;
+  height: 2.05rem;
+  border-radius: 5px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.377);
+  cursor: pointer;
+}
+.pokedex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination {
   width: 100%;
   height: 3rem;
   margin: 2rem 0;
@@ -14,19 +52,20 @@
   align-items: center;
   justify-content: center;
 }
-.pagination > button{
- width: 6rem;
- outline: none;
- border:none;
- height: 2.05rem;
- border-radius: 5px;
- font-family: 'Alumni Sans', sans-serif;
- font-size: x-large;
- font-weight: 700;
- box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.377);
- cursor: pointer;
- margin: 0 2rem;
- transition: .5s;
-}.pagination> button:hover{
+.pagination > button {
+  width: 6rem;
+  outline: none;
+  border: none;
+  height: 2.05rem;
+  border-radius: 5px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.377);
+  cursor: pointer;
+  margin: 0 2rem;
+  transition: 0.5s;
+}
+.pagination > button:hover {
   background-color: #8c00ff8f;
 }

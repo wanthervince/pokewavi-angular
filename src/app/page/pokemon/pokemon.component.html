@@ -1,17 +1,64 @@
-<div class="pokemon {{typeColor}}">
- <h1 class="title">{{ name.toUpperCase() }}</h1>
- <div class="conten_img">
-  <img src="{{img}}" alt="img">
- </div>
- <p class="pokeId">Nrº {{nro}}</p>
- <div class="type" >
-  <p *ngFor="let type of types" class="{{ type.type.name}}">{{ type.type.name.toUpperCase() }}</p>
- </div>
- <div class="ability">
-  <h2>Ability</h2>
-  <div>
-   <h3>abilidad 1</h3>
-   <p>descripcion</p>
+<div class="nofound" *ngIf="error; else ok">
+  <div class="img404">
+    <img src="../../../assets/img/pokemon/pokemon404.png" alt="" />
   </div>
- </div>
+  <div class="frente">
+    <img
+      src="../../../assets/img/pokemon/titlePokemon.png"
+      width="500"
+      alt=""
+    />
+    <button class="btn" (click)="back()">REGRESAR</button>
+    <img
+      src="../../../assets/img/pokemon/subtitlePokemon.png"
+      width="700"
+      alt=""
+    />
+  </div>
 </div>
+<ng-template #ok>
+  <div class="spiner" *ngIf="pokemon == null; else card">
+    <div class="spinner"></div>
+  </div>
+  <ng-template #card>
+    <div class="pokemon {{ typeColor }}" #ok>
+      <h1 class="title">{{ name.toUpperCase() }}</h1>
+      <div class="conten_img">
+        <img src="{{ img }}" alt="img" />
+      </div>
+      <p class="pokeId">Nrº {{ nro }}</p>
+      <div class="type">
+        <p *ngFor="let type of types" class="{{ type.type.name }}">
+          {{ type.type.name.toUpperCase() }}
+        </p>
+      </div>
+      <div class="detail">
+        <div class="titleDetail">
+          <h2>Datos</h2>
+        </div>
+        <div class="detailDescripcion">
+          <div class="medidas">
+            <h3>Peso</h3>
+            <p>{{ peso.slice(0, -1) }},0 kg</p>
+          </div>
+          <div class="medidas">
+            <h3>Altura</h3>
+            <p>{{ pokemon.height }}0 cm</p>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="titleDetail">
+          <h2>Estadisticas</h2>
+        </div>
+        <div class="items">
+          <div class="statsItems" *ngFor="let stat of stats">
+            <p>{{ stat.stat.name.toUpperCase() }}</p>
+            <span>{{ stat.base_stat }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="regresar" (click)="back()">BACK</button>
+  </ng-template>
+</ng-template>
